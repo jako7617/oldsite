@@ -1,0 +1,348 @@
+.topnavContainer {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  padding: 50px 50px 20px 20px;
+  align-items: center;
+  justify-self: center;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.sideIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  a {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+.whitelogo {
+  height: 70px;
+  cursor: pointer;
+}
+.whitelogo:hover,
+.whitelogo2:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidemenu {
+  height: 40px;
+  margin-top: 8px;
+}
+.sidemenu:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.purpleLine {
+  border: 3px solid $clr-light-purple;
+  max-width: 89.5%;
+  margin: 0 0 0 6.2%;
+}
+
+.breadNsearch {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 50% 20% 30%;
+  grid-template-rows: 100%;
+  input {
+    grid-column: 3/4;
+    //margin-right: 14%;
+    padding: 12px;
+    grid-row: 1/2;
+    color: $clr-text;
+    outline: none;
+    background-color: $clr-sheet-black;
+  }
+  input:focus {
+    transition: 0.5;
+  }
+  &__searchDivFlex {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 15px;
+  }
+  a {
+    margin-left: 1%;
+  }
+  &__newM {
+    display: block;
+    margin-left: 12% !important;
+  }
+  a:hover {
+    color: $clr-light-purple;
+    transition: 0.2s;
+  }
+  img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+    margin: 3% 18%;
+    width: 20px;
+    height: 20px;
+  }
+  &__crumbs {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.dropdownGrid {
+  display: grid;
+  grid-row-gap: 25px;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: auto;
+  padding: 4% 4% 4% 6%;
+  z-index: -1;
+
+  &__frontIllu {
+    grid-row: 1/6;
+    grid-column: 2/3;
+    width: 130%;
+    height: auto;
+    justify-self: end;
+    align-items: center;
+  }
+}
+#list1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: left;
+}
+#list2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: left;
+}
+#list3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  text-align: left;
+}
+#list4 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  text-align: left;
+}
+#list5 {
+  grid-row: 5/6;
+  grid-column: 1/2;
+  text-align: left;
+}
+.dropdown-check-list {
+  display: inline-block;
+}
+.anchor span {
+  border-bottom: 4px solid $clr-text;
+}
+.sideFont {
+  font-weight: 400;
+  font-size: $font-med-fallback;
+  font-size: $font-med;
+  margin-bottom: 2rem;
+}
+.mainFont {
+  font-weight: 400;
+  font-size: $font-l-fallback;
+  font-size: $font-l;
+}
+
+.anchor span:hover {
+  color: $clr-light-purple;
+  border-bottom: 4px solid $clr-light-purple;
+  transition: 0.2s;
+}
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  transition: 0.5s;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 3% 0 0 0;
+  border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+  text-align: left;
+  transition: 0.2s;
+  font-size: $font-med;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+.listItems {
+  padding-bottom: 35px;
+}
+.listItems a:hover {
+  color: $clr-light-purple;
+  transition: 0.2s;
+}
+li img {
+  float: left;
+  height: 250px;
+  margin: 1% 2% 0 10%;
+}
+.sideDropDots {
+  float: left;
+  height: 150px !important;
+  margin: 1% 2% 0 15%;
+}
+.purpleLineSide {
+  border: 3px solid $clr-light-purple;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.listItemsSide {
+  padding-bottom: 15px;
+  font-size: $font-sm !important;
+  margin-left: 50px;
+}
+.listItemsSide:hover {
+  color: $clr-light-purple;
+}
+.sideMenuMargin {
+  margin-left: 90px;
+  margin-bottom: 100px;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav h5 {
+  text-align: center;
+  margin: 20px 0;
+}
+/* The navigation menu links */
+.whitelogo2 {
+  display: block;
+  margin: 5px auto 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: $clr-light-purple;
+  transition: 0.2s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+//test//
+.container {
+  grid-column: 3/4;
+}
+
+.wrapper {
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 75%;
+  background-image: $clr-sheet-black;
+  border: 2px solid $clr-light-purple;
+  background-color: $clr-sheet-black;
+
+  div {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
+    img {
+      padding: 0;
+      margin: 0 10%;
+      cursor: pointer;
+    }
+  }
+}
+
+.searcher {
+  width: 88%;
+  border: none;
+  height: 20px;
+  background-image: $clr-sheet-black;
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searcher:focus {
+  outline: none;
+}
+
+.results {
+  padding: 0px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 2px;
+  background-color: $clr-sheet-black;
+  width: 80%;
+}
+
+.results ul {
+  margin: 0;
+  padding: 0;
+}
+
+.results ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 8px 12px;
+  transition: all 0.2s linear;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: block !important;
+}
+
+.show .results {
+  padding: 10px;
+}
+
+.results ul li:hover {
+  background: $clr-grey-black;
+}

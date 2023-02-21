@@ -1,0 +1,569 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.3;
+  text-decoration: none;
+}
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+}
+body,
+html {
+  height: 100%;
+  padding-top: 0;
+  width: 100%;
+}
+
+/* boilerplate, fjerner standard styling fra browser */
+
+html {
+  scroll-behavior: smooth;
+}
+h2,
+h3,
+a {
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+#hero {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-image: url("assets/images/dogopt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 50px;
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.heroGridItem {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  justify-self: center;
+}
+.heroSub {
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.heroHeader {
+  color: white;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.callToA {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #db233b;
+  text-align: center;
+  padding: 3% 4%;
+  border-radius: 5px;
+  animation: btnfrontOut 0.3s;
+}
+.callToA:hover {
+  background-color: #a81d2f;
+  border-radius: 15px;
+  animation: btnfrontIn 0.1s ease-out forwards alternate;
+}
+@keyframes btnfrontIn {
+  from {
+    background-color: #db233b;
+    border-radius: 5px;
+  }
+  to {
+    background-color: #a81d2f;
+    border-radius: 15px;
+  }
+}
+@keyframes btnfrontOut {
+  from {
+    background-color: #a81d2f;
+    border-radius: 15px;
+  }
+  to {
+    background-color: #db233b;
+    border-radius: 5px;
+  }
+}
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem;
+  margin-bottom: 50px;
+}
+.navGridItem1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 75%;
+  height: 45vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/bridgeopt.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  animation: portOut 0.5s;
+}
+.navGridItem1 h1 {
+  opacity: 0;
+  position: relative;
+  top: 40%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 10px;
+  animation: headOut 0.5s;
+}
+.navGridItem1:hover h1 {
+  opacity: 1;
+  animation: headIn 0.3s ease-out forwards alternate;
+}
+@keyframes headIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes headOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.navGridItem1:hover {
+  background-blend-mode: overlay;
+  animation: portIn 0.5s ease-out forwards alternate;
+}
+@keyframes portIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    width: 75%;
+    height: 45vh;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 73%;
+    height: 43vh;
+  }
+}
+@keyframes portOut {
+  from {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 73%;
+    height: 43vh;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+    width: 75%;
+    height: 45vh;
+  }
+}
+
+.navGridItem2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 75%;
+  height: 45vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/money.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  animation: portOut 0.5s;
+}
+.navGridItem2:hover {
+  background-blend-mode: overlay;
+  animation: portIn 0.5s ease-out forwards alternate;
+}
+.navGridItem2 h1 {
+  opacity: 0;
+  position: relative;
+  top: 40%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 5px;
+  animation: headOut 0.5s;
+}
+.navGridItem2:hover h1 {
+  opacity: 1;
+  animation: headIn 0.3s ease-out forwards alternate;
+}
+.navGridItem3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 75%;
+  height: 45vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/selfopt.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  animation: portOut 0.5s;
+}
+.navGridItem3:hover {
+  background-blend-mode: overlay;
+  animation: portIn 0.5s ease-out forwards alternate;
+}
+.navGridItem3 h1 {
+  position: relative;
+  top: 40%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 10px;
+  opacity: 0;
+  animation: headOut 0.5s;
+}
+.navGridItem3:hover h1 {
+  opacity: 1;
+  animation: headIn 0.3s ease-out forwards alternate;
+}
+.navGridItem4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 75%;
+  height: 45vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/contactopt.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  animation: portOutCall 0.5s;
+}
+.navGridItem4:hover {
+  background-blend-mode: overlay;
+  animation: portInCall 0.5s ease-out forwards alternate;
+}
+.navGridItem4 h1 {
+  position: relative;
+  top: 40%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 10px;
+  opacity: 0;
+  animation: headOut 0.5s;
+}
+.navGridItem4:hover h1 {
+  opacity: 1;
+  animation: headIn 0.3s ease-out forwards alternate;
+}
+@keyframes portInCall {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    width: 75%;
+    height: 45vh;
+  }
+  to {
+    background-color: rgba(219, 35, 59, 0.9);
+    width: 73%;
+    height: 43vh;
+  }
+}
+@keyframes portOutCall {
+  from {
+    background-color: rgba(219, 35, 59, 0.9);
+    width: 73%;
+    height: 43vh;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+    width: 75%;
+    height: 45vh;
+  }
+}
+
+/******
+portfolio site
+******/
+.portHeader {
+  text-align: center;
+  margin: 15px 0 5px 0;
+  color: #252729;
+  font-size: 50px;
+}
+.portSub {
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  color: #252729;
+  font-size: 16px;
+  animation: subOut 0.2s;
+  text-decoration: none;
+  width: 15%;
+  padding: 10px 0;
+  background-color: none;
+}
+@keyframes subIn {
+  from {
+    text-decoration: none;
+    background-color: none;
+    border-radius: 10px;
+  }
+  to {
+    background-color: #db233b;
+    border-radius: 10px;
+    color: white;
+  }
+}
+@keyframes subOut {
+  from {
+    background-color: #db233b;
+    border-radius: 10px;
+    color: white;
+  }
+  to {
+    text-decoration: none;
+    background-color: none;
+    border-radius: 10px;
+  }
+}
+.portSub:hover {
+  animation: subIn 0.2s ease-out forwards alternate;
+}
+.portGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4fr 3fr 3fr 4fr;
+  grid-gap: 15px 5px;
+}
+.portGridItem1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/thsun.jpg");
+  border-radius: 10px;
+  background-position: 47% 0;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+
+.portGridItem2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: center;
+  background-image: url("assets/images/bridgeport.jpg");
+  border-radius: 10px;
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem3 {
+  grid-column: 3/ 4;
+  grid-row: 1 / 2;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/dogchill.jpg");
+  border-radius: 10px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem4 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 96.5%;
+  height: 60vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/guitar.jpg");
+  border-radius: 10px;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  margin-right: 10px;
+}
+.portGridItem5 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 95%;
+  height: 60vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/dogsquare.jpg");
+  border-radius: 10px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem6 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 95%;
+  height: 60vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/beach.jpg");
+  border-radius: 10px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem7 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  width: 96.5%;
+  height: 60vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/dogbw.jpg");
+  border-radius: 10px;
+  background-position: 0% 55%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  margin-left: 10px;
+}
+.portGridItem8 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: end;
+  background-image: url("assets/images/thraps.jpg");
+  border-radius: 10px;
+  background-position: 40% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem9 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: center;
+  background-image: url("assets/images/doggrass.jpg");
+  border-radius: 10px;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.portGridItem10 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  width: 95%;
+  height: 80vh;
+  align-self: center;
+  justify-self: start;
+  background-image: url("assets/images/product.jpg");
+  border-radius: 10px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.contactbtn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  background-color: #db233b;
+  text-align: center;
+  margin: 5% auto;
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  animation: btnOut 0.3s;
+}
+.contactbtn:hover {
+  animation: btnIn 0.1s ease-out forwards alternate;
+}
+@keyframes btnIn {
+  from {
+    border-radius: 5px;
+    background-color: #db233b;
+    color: white;
+  }
+  to {
+    background-color: #a81d2f;
+    color: #f5f5f5;
+    border-radius: 55px;
+  }
+}
+@keyframes btnOut {
+  from {
+    background-color: #a81d2f;
+    color: #f5f5f5;
+    border-radius: 55px;
+  }
+  to {
+    background-color: #db233b;
+    color: white;
+    border-radius: 5px;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 700;
+  background-color: #252729;
+}

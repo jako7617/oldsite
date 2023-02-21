@@ -1,0 +1,166 @@
+.info-grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  padding: 4% 4% 2% 6%;
+  grid-gap: 20px;
+
+  &__griditem1 {
+    background-color: $clr-sheet-black;
+    object-fit: contain;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding: 7% 9%;
+  }
+  &__griditem1 h4 {
+    font-weight: 500;
+  }
+  &__griditem1 div {
+    margin-top: 1%;
+  }
+  &__griditem1 p {
+    margin-bottom: 4%;
+  }
+  &__griditem2 {
+    grid-row: 1/2;
+
+    align-items: center;
+    justify-content: center;
+  }
+  &__griditem3 {
+    grid-row: 2/3;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+.interactive-guide {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 1% 4% 4% 6%;
+
+  &__griditem {
+    background-color: $clr-sheet-black;
+    object-fit: contain;
+    height: 80vh;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding: 3% 5% 8% 5%;
+  }
+  &__griditem h4 {
+    margin-bottom: 20px;
+  }
+  &__content-flex {
+    display: flex;
+    justify-content: stretch;
+    img {
+      width: 50%;
+    }
+
+    p {
+      margin-left: 2%;
+    }
+  }
+  &__progressBar {
+    background-color: $clr-white;
+    height: 1.5%;
+    width: 100%;
+    margin-top: 8%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+.footerBtns {
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    display: flex;
+    padding: 2% 0 5% 0;
+  }
+  a:hover {
+    color: $clr-light-purple;
+    transition: 0.2s;
+  }
+}
+
+.footerText {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4% 3% 6.5%;
+}
+
+.progress-bar {
+  // dimensions of the progress bar, choose any values you like
+  width: 100%;
+  height: 18px;
+  margin-top: 100px;
+  // As a background, I've chosen a linear gradient with a very distinct edge
+  // I've got two colors, black for the background and red for the progress color
+  background-image: linear-gradient(
+    to right,
+    $clr-turqouis-blue 0%,
+    $clr-turqouis-blue 50%,
+    $clr-grey-black 0%,
+    $clr-grey-black 100%
+  );
+
+  // this sets the size of the background. I used 200% because i want to shift the position from 0% to 100%
+  background-size: 200% auto;
+
+  // default background-position
+  background-position: 100% 0;
+
+  // animate the transition
+  transition: background-position 0.3s ease-in-out;
+
+  // cosmetics
+  border: 0;
+  border-radius: 2px;
+}
+.click {
+  margin-top: 20px;
+}
+.progressBtn {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.progressBtnreset {
+  display: inline-block;
+  background-color: $clr-sheet-black !important;
+  border: none !important;
+  color: $clr-text !important;
+  padding: 10px 28px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.progressBtn button {
+  display: inline-block;
+  background-color: $clr-light-purple;
+  border: 2px solid $clr-light-purple;
+  border-radius: 4px;
+  color: black;
+  padding: 10px 28px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.progressBtn button:hover {
+  background-color: $clr-sheet-black;
+  color: $clr-text;
+}
+
+.illus {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}

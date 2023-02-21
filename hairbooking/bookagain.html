@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book igen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navContainer">
+        <div class="navItemHam" onclick="openNav()">
+          <img
+            class="hamIcon"
+            src="assets/icons/menu.png"
+            alt="Hamburger ikon"
+          />
+        </div>
+        <div class="navItemSearch">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Søg.."
+            onclick="document.location='searchresults.html'"
+          />
+
+          <img
+            class="searchIcon"
+            src="assets/icons/search.png"
+            alt="Search
+          ikon"
+            onclick="openSearch()"
+          />
+
+          <img
+            class="filterIcon"
+            src="assets/icons/filter.png"
+            alt="Filter ikon"
+            onclick="openNav2()"
+          />
+        </div>
+      </div>
+    </header>
+    <div id="myNav2" class="overlay2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+        >&times;</a
+      >
+
+      <div class="overlay-content2">
+        <div class="overlayContainer">
+          <h2>Filter</h2>
+
+          <p>Afbudstider</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter1"
+            name="Afbudspriser"
+            value="Priser"
+          />
+
+          <p>Krøller</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter2"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Glatning</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter3"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Farve</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter4"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Herre</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter5"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Dame</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter6"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <button
+            type="button"
+            class="btnFilter"
+            onclick="document.location='bookagain.html'"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <img
+        class="logoSide"
+        src="assets/images/logo_pink.png"
+        alt="Filter ikon"
+      />
+      <div class="overlay-content">
+        <a href="forside.html">Hjem</a>
+        <a href="minetider.html">Mine tider</a>
+        <a href="minprofil.html">Profil</a>
+        <a href="#">Hjælp</a> <a href="index.html">Log Ud</a>
+      </div>
+    </div>
+    <section>
+      <br />
+      <div class="headerMyAppointmentsContainer">
+        <h1 class="headerMyAppointments">Book tid igen</h1>
+        <p>Vis kun afbudspriser</p>
+        <input
+          type="checkbox"
+          id="cancelPrices"
+          name="Afbudspriser"
+          value="Priser"
+          onclick="newPrice()"
+        />
+      </div>
+      <br />
+      <h2 class="titleSalon">HairByUs</h2>
+      <p class="smallText2"><b>Behandling:</b> Kvinde klip langt hår</p>
+
+      <p class="smallText2"><b>Pris:</b> 420,-</p>
+
+      <p class="smallText2"><b>Frisør:</b> Bente</p>
+
+      <p class="smallText2"><b>Tid:</b> kl. 18.00 d. 17/11-2021</p>
+
+      <br />
+    </section>
+    <div id="list1" class="dropdown-check-list">
+      <span class="anchor"><b>Behandling</b></span>
+      <ul class="items">
+        <li>
+          Klip dame langt hår<input
+            class="dropdown-checkb"
+            type="checkbox"
+          /><label id="newPrices"> 400kr</label>
+        </li>
+        <li>
+          Klip dame kort hår<input
+            class="dropdown-checkb"
+            type="checkbox"
+          /><label id="newPrices2"> 360kr</label>
+        </li>
+        <li>
+          Farvning<input class="dropdown-checkb" type="checkbox" /><label
+            id="newPrices3"
+          >
+            900kr</label
+          >
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btnLoginEmail"
+            onclick="document.location='bookagain.html'"
+          >
+            Ok
+          </button>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="list2" class="dropdown-check-list">
+      <span class="anchor"><b>Frisør</b></span>
+      <ul class="items">
+        <li>
+          <div class="pickHairDresser">
+            <img
+              src="assets/images/frisor1.jpg"
+              alt="frisør"
+              class="pickHair"
+            />
+            <div class="">
+              <h3>Bente</h3>
+              <p>4 års uddannelse</p>
+
+              <p>16 års erfaring</p>
+
+              <p>Speciale: balayage</p>
+            </div>
+            <input class="dropdown-checkb2" type="checkbox" />
+          </div>
+        </li>
+        <li>
+          <div class="pickHairDresser">
+            <img
+              src="assets/images/frisor2.jpg"
+              alt="frisør"
+              class="pickHair"
+            />
+            <div>
+              <h3>Grethe</h3>
+              <p>4 års uddannelse</p>
+
+              <p>16 års erfaring</p>
+
+              <p>Speciale: balayage</p>
+            </div>
+            <input class="dropdown-checkb2" type="checkbox" />
+          </div>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btnLoginEmail"
+            onclick="document.location='bookagain.html'"
+          >
+            Ok
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div id="list3" class="dropdown-check-list">
+      <span class="anchor"><b>Dato & tid</b></span>
+      <ul class="items">
+        <li>
+          <h4>Ledige tider</h4>
+          <h5>November 2020</h5>
+
+          <div class="calenderGridContainer">
+            <div class="dateM">M</div>
+            <div class="dateT">T</div>
+            <div class="dateW">O</div>
+            <div class="dateTh">T</div>
+            <div class="dateF">F</div>
+            <div class="dateS">L</div>
+            <div class="dateSun">S</div>
+            <br /><br />
+            <div id="date1" onclick="activeFunc('date1')">1</div>
+            <div id="date2" onclick="activeFunc('date2')">2</div>
+            <div id="date3" onclick="activeFunc('date3')">3</div>
+            <div id="date4" onclick="activeFunc('date4')">4</div>
+            <div id="date5" onclick="activeFunc('date5')">5</div>
+            <div id="date6" onclick="activeFunc('date6')">6</div>
+            <div id="date7" onclick="activeFunc('date7')">7</div>
+            <div id="date8" onclick="activeFunc('date8')">8</div>
+            <div id="date9" onclick="activeFunc('date9')">9</div>
+            <div id="date10" onclick="activeFunc('date10')">10</div>
+            <div id="date11" onclick="activeFunc('date11')">11</div>
+            <div id="date12" onclick="activeFunc('date12')">12</div>
+            <div id="date13" onclick="activeFunc('date13')">13</div>
+            <div id="date14" onclick="activeFunc('date14')">14</div>
+            <div id="date15" onclick="activeFunc('date15')">15</div>
+            <div id="date16" onclick="activeFunc('date16')">16</div>
+            <div id="date17" onclick="activeFunc('date17')">17</div>
+            <div id="date18" onclick="activeFunc('date18')">18</div>
+            <div id="date19" onclick="activeFunc('date19')">19</div>
+            <div id="date20" onclick="activeFunc('date20')">20</div>
+            <div id="date21" onclick="activeFunc('date21')">21</div>
+            <div id="date22" onclick="activeFunc('date22')">22</div>
+            <div id="date23" onclick="activeFunc('date23')">23</div>
+            <div id="date24" onclick="activeFunc('date24')">24</div>
+            <div id="date25" onclick="activeFunc('date25')">25</div>
+            <div id="date26" onclick="activeFunc('date26')">26</div>
+            <div id="date27" onclick="activeFunc('date27')">27</div>
+            <div id="date28" onclick="activeFunc('date28')">28</div>
+            <div id="date29" onclick="activeFunc('date29')">29</div>
+            <div id="date30" onclick="activeFunc('date30')">30</div>
+            <div id="date31" onclick="activeFunc('date31')">31</div>
+          </div>
+          <hr />
+          <br />
+          <h4>Ledige tider</h4>
+          <div class="timesGridContainer">
+            <div id="time1" onclick="activeFuncTime('time1')">11:00</div>
+            <div id="time2" onclick="activeFuncTime('time2')">13:30</div>
+            <div id="time3" onclick="activeFuncTime('time3')">15:15</div>
+            <div id="time4" onclick="activeFuncTime('time4')">16:00</div>
+            <div id="time5" onclick="activeFuncTime('time5')">17:00</div>
+            <div id="time6" onclick="activeFuncTime('time6')">18:00</div>
+            <div id="time7" onclick="activeFuncTime('time7')">18:30</div>
+          </div>
+          <br />
+          <p class="timesPara"><b>Dato:</b> 17. november</p>
+          <p class="timesPara"><b>Tid:</b> kl. 18:00</p>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btnLoginEmail"
+            onclick="document.location='bookagain.html'"
+          >
+            Ok
+          </button>
+        </li>
+      </ul>
+    </div>
+    <button
+      type="button"
+      class="btnBook"
+      onclick="document.location='confirmation.html'"
+    >
+      Book
+    </button>
+  </body>
+</html>

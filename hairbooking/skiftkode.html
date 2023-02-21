@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Skift kode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navContainer">
+        <div class="navItemHam" onclick="openNav()">
+          <img
+            class="hamIcon"
+            src="assets/icons/menu.png"
+            alt="Hamburger ikon"
+          />
+        </div>
+        <div class="navItemSearch">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Søg.."
+            onclick="document.location='searchresults.html'"
+          />
+          <img
+            class="searchIcon"
+            src="assets/icons/search.png"
+            alt="Search ikon"
+            onclick="openSearch()"
+          /><img
+            class="filterIcon"
+            src="assets/icons/filter.png"
+            alt="Filter ikon"
+            onclick="openNav2()"
+          />
+        </div>
+      </div>
+    </header>
+    <div id="myNav2" class="overlay2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+        >&times;</a
+      >
+
+      <div class="overlay-content2">
+        <div class="overlayContainer">
+          <h2>Filter</h2>
+
+          <p>Afbudstider</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter1"
+            name="Afbudspriser"
+            value="Priser"
+          />
+
+          <p>Krøller</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter2"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Glatning</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter3"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Farve</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter4"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Herre</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter5"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Dame</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter6"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <button
+            type="button"
+            class="btnFilter"
+            onclick="document.location='skiftkode.html'"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <img
+        class="logoSide"
+        src="assets/images/logo_pink.png"
+        alt="Filter ikon"
+      />
+      <div class="overlay-content">
+        <a href="forside.html">Hjem</a>
+        <a href="minetider.html">Mine tider</a>
+        <a href="minprofil.html">Profil</a>
+        <a href="#">Hjælp</a><a href="index.html">Log Ud</a>
+      </div>
+    </div>
+
+    <section>
+      <h1 class="headerProfile">Skift Kode</h1>
+    </section>
+
+    <form class="formProfile" method="post">
+      <section>
+        <div class="">
+          <p class="overskriftkode">Gamle kode</p>
+          <input type="text" name="old code" value="4520" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Ny kode</p>
+          <input type="text" name="new code" value="6950" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Ny kode igen</p>
+          <input type="text" name="new code again" value="6950" />
+        </div>
+      </section>
+    </form>
+
+    <br />
+
+    <button
+      type="button"
+      class="btnLoginEmail"
+      onclick="document.location='minprofil.html'"
+    >
+      Gem
+    </button>
+  </body>
+</html>

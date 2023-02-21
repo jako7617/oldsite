@@ -1,0 +1,97 @@
+.omos-intro h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 8rem;
+  color: #161b91;
+}
+.omos-intro p {
+  line-height: 1.6;
+  font-size: $font-sm-fallback;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.omos-kontakt h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 3rem;
+  color: #161b91;
+}
+
+.omos-kontakt p {
+  line-height: 1.6;
+  font-size: $font-sm-fallback;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: left;
+}
+.omos-img {
+  width: clamp(10%, 50%, 55%);
+  border-radius: 2rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.omos-button {
+  padding: 1.5rem 7rem;
+  text-align: center;
+  border: none;
+  font-size: $font-sm;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: $clr-dark-blue;
+  color: $clr-white;
+  font-family: Ironstrike, sans-serif;
+  white-space: nowrap;
+  margin: 3rem auto 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.omos-button:hover {
+  background-color: white;
+  color: $clr-dark-blue;
+  padding: 1.2rem 6.7rem;
+  border: 3px solid $clr-dark-blue;
+  transition: $transition-200ms;
+}
+
+@media screen and (min-width: 768px) {
+  .omos-intro {
+    width: 70rem;
+    margin: 0 auto;
+
+    h2 {
+      font-size: $font-xl;
+      padding-top: 12rem;
+    }
+  }
+
+  .omos-kontakt {
+    width: 70rem;
+    margin: 0 auto;
+  }
+  #omos-flex {
+    width: 70rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .omos-intro {
+    width: 90rem;
+  }
+  .omos-kontakt {
+    width: 90rem;
+  }
+  #omos-flex {
+    display: flex;
+    margin: 0 auto;
+    width: 90rem;
+  }
+  .omos-img {
+    width: clamp(10%, 40%, 45%);
+    border-radius: 2rem;
+  }
+}

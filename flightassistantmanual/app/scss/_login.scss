@@ -1,0 +1,81 @@
+.login {
+  &__container {
+    background-color: $clr-sheet-black;
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: auto;
+    box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.8);
+  }
+  h4 {
+    text-align: center;
+    padding: 4rem;
+    color: $clr-text;
+  }
+  &__inputs {
+    width: 500px;
+  }
+  &__inputs label {
+    color: $clr-text;
+    font-size: $font-sm;
+    font-size: $font-sm-fallback;
+    display: block;
+    text-align: left;
+    margin-left: 90px;
+  }
+  &__inputs input {
+    color: $clr-text;
+    width: 65%;
+    padding: 12px 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: $clr-sheet-black;
+    box-sizing: border-box;
+    border: 2px solid #7e7e7e;
+    border-radius: 4px;
+  }
+  &__inputs input:focus {
+    border: 2px solid $clr-light-purple;
+    outline: none;
+  }
+  &__fpass {
+    color: #afadad;
+    margin-left: 95px;
+  }
+  &__fpass:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  &__wrapperbtn {
+    text-align: center;
+  }
+  &__btn {
+    display: inline-block;
+    background-color: $clr-light-purple;
+    border: 2px solid $clr-light-purple;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 80px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__btn:hover {
+    background-color: $clr-sheet-black;
+    color: $clr-text;
+  }
+  &__container2 {
+    padding: 0 60px 0 60px;
+    color: $clr-text;
+  }
+}
+
+#loginform {
+  text-align: center;
+}

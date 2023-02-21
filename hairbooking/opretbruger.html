@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Opret bruger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <a href="index.html"
+      ><img
+        class="arrowBack"
+        src="assets/icons/arrowbackblack.png"
+        alt="arrow back"
+    /></a>
+    <section>
+      <h1 class="headerProfile">Opret bruger</h1>
+    </section>
+
+    <form class="formProfile" method="post">
+      <section>
+        <div class="">
+          <p class="overskriftkode">Navn</p>
+          <input type="text" name="name" value="" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Adresse (valgfrit)</p>
+          <input type="text" name="adresse" value="" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Email</p>
+          <input type="text" name="email" value="" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Mobil nr.</p>
+          <input type="text" name="nummer" value="" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Skriv kode</p>
+          <input type="text" name="kode" value="" />
+        </div>
+
+        <div class="">
+          <p class="overskriftkode">Skriv kode igen</p>
+          <input type="text" name="kodeigen" value="" />
+        </div>
+      </section>
+    </form>
+
+    <br />
+
+    <div class="profileContainer">
+      <div class="checkboxBtn">
+        <input type="checkbox" class="checkboxCreate" />
+        <br />
+
+        <input type="checkbox" class="checkboxCreate" />
+        <br />
+
+        <input type="checkbox" class="checkboxCreate" />
+        <br />
+
+        <input type="checkbox" class="checkboxCreate" />
+        <br />
+      </div>
+
+      <div class="buttonText">
+        <p>Slå touchID til</p>
+        <p>Påmindelser</p>
+        <p>Synkroniser med min kalender</p>
+        <p>Accepter vilkår og betingelser</p>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btnLoginEmail"
+      onclick="document.location='forside.html'"
+    >
+      Fortsæt
+    </button>
+
+    <br />
+
+    <!-- https://www.w3schools.com/howto/howto_css_switch.asp -->
+  </body>
+</html>
+<!-- Denne side er responsiv -->

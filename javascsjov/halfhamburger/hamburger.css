@@ -1,0 +1,32 @@
+.hamIcon img {
+  width: 50px;
+  height: auto;
+  float: right;
+}
+.mainMenu {
+  float: right;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+.mainMenu li {
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .mainMenu {
+    display: none;
+  }
+  .mainMenu.toggleCls {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamIcon {
+    display: none;
+  }
+  .mainMenu {
+    display: initial;
+  }
+}

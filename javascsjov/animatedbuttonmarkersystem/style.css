@@ -1,0 +1,31 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+div#myContent {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #143b61;
+  width: 450px;
+  color: white;
+}
+
+div#myMenu > button {
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  background-color: #22c9a2;
+}
+
+div#btn_marker {
+  position: absolute;
+  border: black 3px solid;
+  border-bottom: none;
+  width: 0px;
+  height: 8px;
+  top: 73px;
+  display: none;
+  -webkit-transition: left 0.5s ease 0s, width 0.5s linear 0s;
+  transition: left 0.5s ease 0s, width 0.5s linear 0s;
+}

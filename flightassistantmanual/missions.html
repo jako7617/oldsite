@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Flight Assistant - Chapter 01 - Missions"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script src="app/script/script.js" defer></script>
+    <title>Flight Assistant Manual</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <a href="tableofcontents.html">
+            <img
+              src="images/white-quadsat.svg"
+              class="whitelogo2"
+              alt="Sidemenu dots"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <hr class="purpleLineSide" />
+          <h5>TABLE OF CONTENTS</h5>
+          <div class="sideMenuMargin">
+            <div id="list6" class="dropdown-check-list" tabindex="100">
+              <span class="anchor sideFont"
+                ><b>01</b> <span> New mission</span></span
+              >
+              <ul class="items">
+                <li>
+                  <img
+                    src="images/icons/dropdownicon.svg"
+                    alt="Sidemenu dots"
+                    loading="lazy"
+                    decoding="async"
+                    class="sideDropDots"
+                  />
+                </li>
+                <li class="listItemsSide">
+                  <a href="missions.html">Newly created mission</a>
+                </li>
+                <li class="listItemsSide"><a href="missions.html">Caution</a></li>
+                <li class="listItemsSide"><a href="missions.html">Equipment</a></li>
+                <li class="listItemsSide"><a href="missions.html">Operator</a></li>
+                <li class="listItemsSide">
+                  <a href="missions.html"> Flexibility and range</a>
+                </li>
+              </ul>
+            </div>
+            <div id="list7" class="dropdown-check-list" tabindex="100">
+              <span class="anchor sideFont"
+                ><b>02</b> <span>Gathering data</span></span
+              >
+
+              <ul class="items">
+                <li>
+                  <img
+                    src="images/icons/dropdownicon.svg"
+                    alt="Sidemenu dots"
+                    loading="lazy"
+                    decoding="async"
+                    class="sideDropDots"
+                  />
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Gathering Data</a>
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Software basics</a>
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Plots and scans</a>
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Azimuth</a>
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Saving</a>
+                </li>
+              </ul>
+            </div>
+            <div id="list8" class="dropdown-check-list" tabindex="100">
+              <span class="anchor sideFont"
+                ><b>03</b> <span>Software basics</span></span
+              >
+
+              <ul class="items">
+                <li>
+                  <img
+                    src="images/icons/dropdownicon.svg"
+                    alt="Dropdown dots"
+                    loading="lazy"
+                    decoding="async"
+                    class="sideDropDots"
+                  />
+                </li>
+                <li class="listItemsSide">
+                  <a href="">Newly created mission</a>
+                </li>
+                <li class="listItemsSide"><a href="">Caution</a></li>
+                <li class="listItemsSide"><a href="">Equipment</a></li>
+                <li class="listItemsSide"><a href="">Operator</a></li>
+                <li class="listItemsSide">
+                  <a href=""> Flexibility and range</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="list9" class="dropdown-check-list" tabindex="100">
+              <span class="anchor sideFont"
+                ><b>04</b> <span>Connecting to drone</span></span
+              >
+
+              <ul class="items">
+                <li>
+                  <img
+                    src="images/icons/dropdownicon.svg"
+                    alt="Dropdown dots"
+                    loading="lazy"
+                    decoding="async"
+                    class="sideDropDots"
+                  />
+                </li>
+                <li class="listItemsSide">
+                  <a href="">Newly created mission</a>
+                </li>
+                <li class="listItemsSide">
+                  <a href="caution.html">Caution</a>
+                </li>
+                <li class="listItemsSide"><a href="">Equipment</a></li>
+                <li class="listItemsSide"><a href="">Operator</a></li>
+                <li class="listItemsSide">
+                  <a href=""> Flexibility and range</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="list10" class="dropdown-check-list" tabindex="100">
+              <span class="anchor sideFont"
+                ><b>05</b> <span>Antenna measurements</span></span
+              >
+
+              <ul class="items">
+                <li>
+                  <img
+                    src="images/icons/dropdownicon.svg"
+                    alt="Dropdown dots"
+                    loading="lazy"
+                    decoding="async"
+                    class="sideDropDots"
+                  />
+                </li>
+                <li class="listItemsSide">
+                  <a href="">Newly created mission</a>
+                </li>
+                <li class="listItemsSide"><a href="">Caution</a></li>
+                <li class="listItemsSide"><a href="">Equipment</a></li>
+                <li class="listItemsSide"><a href="">Operator</a></li>
+                <li class="listItemsSide">
+                  <a href="">Flexibility and range</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sideIcons">
+            <a href="tableofcontents.html"
+              ><img
+                src="images/icons/home.svg"
+                alt="Home icon"
+                loading="lazy"
+                decoding="async"
+              />
+              Home</a
+            >
+            <div>
+              <a href="index.html"
+                ><img
+                  src="images/icons/logout.svg"
+                  alt="Logout icon"
+                  loading="lazy"
+                  decoding="async"
+                />
+                Log out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- sidemenu slut -->
+
+        <div class="topnavContainer">
+          <img
+            src="images/icons/sidemenu.svg"
+            class="sidemenu"
+            alt="Sidemenu dots"
+            loading="lazy"
+            decoding="async"
+            onclick="openNav()"
+          />
+          <h3>01 Missions</h3>
+          <a href="tableofcontents.html">
+            <img
+              src="images/white-quadsat.svg"
+              class="whitelogo"
+              alt="QuadSATs logo"
+              loading="lazy"
+              decoding="async"
+          /></a>
+        </div>
+        <hr class="purpleLine" />
+        <div class="breadNsearch">
+          <div class="breadNsearch__crumbs">
+            <a class="breadNsearch__newM" href="tableofcontents.html"
+              >Table of contents / </a
+            ><a href="missions.html"> <b>Newly created mission /</b></a>
+          </div>
+          <div class="container">
+            <div class="wrapper">
+              <div>
+                <input
+                  class="searcher"
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Type to search"
+                  autocomplete="off"
+                />
+                <img
+                  src="images/icons/search.svg"
+                  alt="Search Icon"
+                  loading="lazy"
+                  decoding="async"
+                  onclick="document.location='searchresults.html'"
+                />
+              </div>
+              <div class="results">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="info-grid-container">
+        <div class="info-grid-container__griditem1">
+          <h4>Newly created mission</h4>
+          <br />
+          <div>
+            <p>
+              By double clicking on the name of the newly created mission on the
+              bar on the left, you will be presented with the three views that
+              you will interact with in order to perform the test.
+            </p>
+            <br />
+            <p>
+              The first view called the “calibration” allows you to change the
+              information regarding the referencing system (model, manufacturer,
+              configuration, frequency, position, orientation and radom).
+            </p>
+            <br />
+            <p>
+              It also allows you to adjust the antennas position and
+              orientation. Lastly, you are able to adjust the payload settings,
+              if any are connected.
+            </p>
+            <br />
+            <p>
+              The second view called the “scan” allows you to create the flights
+              of the drone that you will be using to test the antenna. Here, you
+              will also be doing the data gathering as well as the data
+              processing.
+            </p>
+            <br />
+            <p>
+              In the third and last view, called the “plot”, is where you will
+              be viewing the created data sets.
+            </p>
+          </div>
+        </div>
+        <div class="info-grid-container__griditem2">
+          <img
+            src="images/newmission1ny.png"
+            class="illus"
+            alt="Sidemenu dots"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="info-grid-container__griditem3">
+          <img
+            src="images/newmission2ny.png"
+            class="illus"
+            alt="Sidemenu dots"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <div class="interactive-guide">
+        <div class="interactive-guide__griditem">
+          <h4>Guide</h4>
+          <div class="interactive-guide__content-flex">
+            <img
+              src="images/page1-crp.png"
+              class="dropdownGrid__frontIllu"
+              alt="Sidemenu dots"
+              loading="lazy"
+              decoding="async"
+              id="imgClickAndChange"
+            />
+            <p id="guideText">
+              <b> Start: </b> <br />
+              By double clicking on the name of the newly created mission on the
+              bar on the left, you will be presented with the three views that
+              you will interact with in order to perform the test.
+            </p>
+          </div>
+          <div id="progress" class="progress-bar"></div>
+          <div class="progressBtn">
+            <button
+              id="click"
+              onclick="setPrc(), resetImage();"
+              class="progressBtnreset"
+            >
+              RESET
+            </button>
+            <button class="click" onclick="setPrc('25'), changeImage();">
+              STEP 1
+            </button>
+            <button class="click" onclick="setPrc('50'), changeImage2();">
+              STEP 2
+            </button>
+            <button class="click" onclick="setPrc('75'), changeImage3();">
+              STEP 3
+            </button>
+            <button class="click" onclick="setPrc('99.9'), changeImage4();">
+              STEP 4
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerBtns">
+        <a href="tableofcontents.html"
+          ><img
+            src="images/icons/leftArrow.svg"
+            alt="Left Arrow"
+            loading="lazy"
+            decoding="async"
+          />
+          <h4>PREVIOUS PAGE</h4></a
+        >
+        <a href="caution.html"
+          ><h4>NEXT PAGE</h4>
+          <img
+            src="images/icons/rightArrow.svg"
+            alt="Right Arrow"
+            loading="lazy"
+            decoding="async"
+        /></a>
+      </div>
+      <hr class="purpleLine" />
+      <div class="footerText">
+        <p>Flight Assistant Manual</p>
+        <p>Page 2</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+  color: $clr-text;
+
+  h2,
+  h3,
+  p,
+  img {
+    max-width: 705px;
+  }
+
+  img {
+    content-visibility: auto;
+  }
+}

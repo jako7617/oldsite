@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Forsiden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navContainer">
+        <div class="navItemHam" onclick="openNav()">
+          <img
+            class="hamIcon"
+            src="assets/icons/menu.png"
+            alt="Hamburger ikon"
+          />
+        </div>
+        <div class="navItemSearch">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Søg.."
+            onclick="document.location='searchresults.html'"
+          />
+          <img
+            onclick="openSearch()"
+            class="searchIcon"
+            src="assets/icons/search.png"
+            alt="Search
+          ikon"
+          />
+          <img
+            class="filterIcon"
+            onclick="openNav2()"
+            src="assets/icons/filter.png"
+            alt="Filter ikon"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <img
+        id="logoSideid"
+        class="logoSide"
+        src="assets/images/logo_pink.png"
+        alt="Filter ikon"
+      />
+      <div class="overlay-content">
+        <a href="forside.html">Hjem</a>
+        <a href="minetider.html">Mine tider</a>
+        <a href="minprofil.html">Profil</a>
+        <a href="#">Hjælp</a><a href="index.html">Log Ud</a>
+      </div>
+    </div>
+
+    <div id="myNav2" class="overlay2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+        >&times;</a
+      >
+
+      <div class="overlay-content2">
+        <div class="overlayContainer">
+          <h2>Filter</h2>
+
+          <p>Afbudstider</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter1"
+            name="Afbudspriser"
+            value="Priser"
+          />
+
+          <p>Krøller</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter2"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Glatning</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter3"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Farve</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter4"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Herre</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter5"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <p>Dame</p>
+          <input
+            type="checkbox"
+            class="checkFilter gridFilter6"
+            name="Kategorier"
+            value="Priser"
+          />
+
+          <button
+            type="button"
+            class="btnFilter"
+            onclick="document.location='forside.html'"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h1 class="headerHome">Velkommen tilbage, <span>kære kunde!</span></h1>
+      <p class="timeHome">
+        Du har tid hos <span>Salon Høgh</span>
+        <span><b>d. 25/11 kl 14.00</b></span>
+      </p>
+      <div class="boxContainer">
+        <div class="favoriteBoxHeader">
+          <h2 class="subHeaderHome">
+            Favorit <span class="smallText">Tryk på en salon for at booke</span>
+          </h2>
+        </div>
+        <div class="favoriteBox" onclick="document.location='booking.html'">
+          <img class="salonImg" src="assets/images/salon1.jpg" alt="Salon" />
+          <h4 class="salonName">HairByUs</h4>
+          <p class="salonAdress">Landbrugsvej 129 st th.</p>
+        </div>
+        <div
+          class="cancelsBoxHeader"
+          onclick="document.location='afbudstider.html'"
+        >
+          <h2 class="subHeaderHome">
+            Afbudstider
+            <span class="smallText">Tryk på en salon for at booke</span>
+          </h2>
+        </div>
+        <div class="cancelsBox" onclick="document.location='booking.html'">
+          <img class="salonImg" src="assets/images/salon2.jpg" alt="Salon" />
+          <h4 class="salonName">Salon Fleur</h4>
+          <p class="salonAdress">Sundtoften 199B 2. tv.</p>
+        </div>
+        <div class="cancelsBox2" onclick="document.location='booking.html'">
+          <img class="salonImg" src="assets/images/salon3.jpg" alt="Salon" />
+          <h4 class="salonName">Hairways</h4>
+          <p class="salonAdress">Skibhusvej 12</p>
+        </div>
+        <div class="nearBoxHeader" onclick="document.location='nearyou.html'">
+          <h2 class="subHeaderHome">
+            Nær dig
+            <span class="smallText">Tryk på en salon for at booke</span>
+          </h2>
+        </div>
+        <div class="nearBox" onclick="document.location='booking.html'">
+          <img class="salonImg" src="assets/images/salon4.jpeg" alt="Salon" />
+          <h4 class="salonName">Hair trend</h4>
+          <p class="salonAdress">Vestrebro 153C 2.</p>
+        </div>
+        <div class="nearBox2" onclick="document.location='booking.html'">
+          <img class="salonImg" src="assets/images/salon5.jpeg" alt="Salon" />
+          <h4 class="salonName">By Holst</h4>
+          <p class="salonAdress">Seebladsgade 2</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- Denne side er responsiv -->

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.51a8b58d.css",
+    "main.js": "/static/js/main.180f4c59.js",
+    "static/js/787.c55d4aa9.chunk.js": "/static/js/787.c55d4aa9.chunk.js",
+    "static/media/laptop.svg": "/static/media/laptop.f7576701d0c79676c1168704c9ce5062.svg",
+    "static/media/angelle.webp": "/static/media/angelle.e35177f0d66c256733ae.webp",
+    "static/media/bedroom.svg": "/static/media/bedroom.bc295e0dc49b218607ab30360e605af7.svg",
+    "static/media/pairprogram.svg": "/static/media/pairprogram.3f1884c564911f316b35894afedef1fc.svg",
+    "static/media/biglaptop.svg": "/static/media/biglaptop.619336b9087c743dd2e153a9c7184332.svg",
+    "static/media/4dww.svg": "/static/media/4dww.8654b0c1006a0248c3ad6be4db384049.svg",
+    "static/media/coffee.svg": "/static/media/coffee.e4bb1c195b1052171594feaa73172d9b.svg",
+    "static/media/xp.svg": "/static/media/xp.daf6a744d5a780c85724f23823fa0420.svg",
+    "index.html": "/index.html",
+    "static/media/talks-illu.svg": "/static/media/talks-illu.dc99b5d294f50112bb508efbb7862c0a.svg",
+    "static/media/arrow.svg": "/static/media/arrow.5dc3a27e93602585bf4f9d5635d8ee83.svg",
+    "main.51a8b58d.css.map": "/static/css/main.51a8b58d.css.map",
+    "main.180f4c59.js.map": "/static/js/main.180f4c59.js.map",
+    "787.c55d4aa9.chunk.js.map": "/static/js/787.c55d4aa9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51a8b58d.css",
+    "static/js/main.180f4c59.js"
+  ]
+}
